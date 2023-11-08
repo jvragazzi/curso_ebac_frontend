@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Imóveis</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #cabecalho {
+            margin: 0;
+        }
+
+        .carousel-item img {
+            object-fit: cover;
+            object-position: center top;
+            width: 100%;
+        }
+
+        .carousel-item {
+            height: 600px;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: white;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #fff;
+            padding-top: 70px;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            z-index: 999;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>EBAC Imobiliária</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#slide-fotos">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#imoveis">Imóveis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#menu" class="container">
+        <section class="section"  id="slide-fotos">
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="./img/apartment-4358755.jpg" alt="Imagem 1">
+                            <div class="carousel-caption">
+                                <h4>Belo Horizonte</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/house-7124141.jpg" alt="Imagem 2">
+                            <div class="carousel-caption">
+                                <h4>São Paulo</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./img/skyscraper-8173578.jpg" alt="Imagem 3">
+                            <div class="carousel-caption">
+                                <h4>Rio de Janeiro</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="imoveis">
+            <h2>Imóveis</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Imóvel 01
+                        </div>
+                        <img src="https://via.placeholder.com/100x100">
+                        <div class="card-body">
+                            <h4 class="card-title">Título</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum architecto rem minus exercitationem libero, ut, ducimus molestiae, inventore iusto quos blanditiis! Debitis et adipisci deserunt nulla ad asperiores, ratione enim.</p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Imóvel 02
+                        </div>
+                        <img src="https://via.placeholder.com/100x100">
+                        <div class="card-body">
+                            <h4 class="card-title">Título</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum architecto rem minus exercitationem libero, ut, ducimus molestiae, inventore iusto quos blanditiis! Debitis et adipisci deserunt nulla ad asperiores, ratione enim.</p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Imóvel 03
+                        </div>
+                        <img src="https://via.placeholder.com/100x100">
+                        <div class="card-body">
+                            <h4 class="card-title">Título</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum architecto rem minus exercitationem libero, ut, ducimus molestiae, inventore iusto quos blanditiis! Debitis et adipisci deserunt nulla ad asperiores, ratione enim.</p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contato">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h2>Contato</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
